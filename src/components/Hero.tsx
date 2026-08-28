@@ -7,12 +7,6 @@ import { personalInfo } from "@/data/portfolioData";
 const Hero = () => {
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 overflow-hidden bg-background">
-      {/* Subtle Background Elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-96 h-96 bg-primary/10 dark:bg-primary/15 rounded-full blur-3xl opacity-70" />
-        <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-primary/5 dark:bg-primary/10 rounded-full blur-3xl opacity-60" />
-      </div>
-
       <div className="container relative z-10 px-4 md:px-6 mx-auto">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
           {/* Profile Photo Frame */}
@@ -23,11 +17,10 @@ const Hero = () => {
             className="mb-8 relative"
           >
             <div className="relative group">
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-primary to-blue-500 rounded-full blur opacity-30 group-hover:opacity-60 transition duration-500" />
               <img
                 src={profilePhoto}
                 alt="Harikanth S S"
-                className="relative w-32 h-32 md:w-36 md:h-36 rounded-full object-cover border-2 border-border shadow-xl"
+                className="relative w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-[50%_18%] border-2 border-border shadow-md"
               />
               <div className="absolute bottom-1 right-1 bg-emerald-500 text-white rounded-full p-1 border-2 border-background shadow-md">
                 <span className="w-2.5 h-2.5 bg-white rounded-full block animate-pulse" />

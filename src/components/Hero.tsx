@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Download, Linkedin, Github, Terminal, Sparkles, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
-import profilePhoto from "@/assets/profile-photo.jpeg";
+import profilePhotoHd from "@/assets/profile-photo-hd.png";
 import { personalInfo } from "@/data/portfolioData";
 
 const Hero = () => {
@@ -18,9 +18,9 @@ const Hero = () => {
           >
             <div className="relative group">
               <img
-                src={profilePhoto}
+                src={profilePhotoHd}
                 alt="Harikanth S S"
-                className="relative w-36 h-36 md:w-44 md:h-44 rounded-full object-cover object-[50%_18%] border-2 border-border shadow-md"
+                className="relative w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-2 border-border shadow-md"
               />
               <div className="absolute bottom-1 right-1 bg-emerald-500 text-white rounded-full p-1 border-2 border-background shadow-md">
                 <span className="w-2.5 h-2.5 bg-white rounded-full block animate-pulse" />

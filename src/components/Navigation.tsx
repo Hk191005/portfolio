@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import ThemeToggle from "./ThemeToggle";
 import { personalInfo } from "@/data/portfolioData";
 import { Link, useLocation } from "react-router-dom";
-import profilePhoto from "@/assets/profile-photo.jpeg";
+import profilePhotoFace from "@/assets/profile-photo-face.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -54,9 +54,9 @@ const Navigation = () => {
             className="group flex items-center gap-2.5 font-bold tracking-tight text-foreground text-lg focus:outline-none focus:ring-2 focus:ring-primary rounded-lg p-1"
           >
             <img
-              src={profilePhoto}
+              src={profilePhotoFace}
               alt="Harikanth S S"
-              className="w-9 h-9 rounded-full object-cover object-[50%_18%] border border-primary/40 shadow-sm group-hover:scale-105 transition-all duration-300"
+              className="w-9 h-9 rounded-full object-cover border border-primary/40 shadow-sm group-hover:scale-105 transition-all duration-300"
             />
             <div className="flex flex-col">
               <span className="leading-none text-base font-bold font-sans tracking-tight text-foreground">
